@@ -18,7 +18,7 @@ export class AddPatientComponent {
 
   readValues=()=>
   {
-    let data:any={"name":this.name,"address":this.address,"phone":this.mobile,"dateOfAppoinment":this.dateOfAppointment,"doctorName":this.doctorName}
+    let data:any={"name":this.name,"address":this.address,"mobile":this.mobile,"dateOfAppointment":this.dateOfAppointment,"doctorName":this.doctorName}
     console.log(data)
 
     this.api.addPatient(data).subscribe(
