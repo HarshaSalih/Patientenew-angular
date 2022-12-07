@@ -27,7 +27,7 @@ export class AddPatientComponent {
         console.log(response)
         if (response.status=="success")
         {
-          alert("Course added successfully")
+          alert("Patient added successfully")
           this.name=""
           this.address=""
           this.mobile=""
