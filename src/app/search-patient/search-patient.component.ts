@@ -35,5 +35,26 @@ export class SearchPatientComponent {
   }
 
 
+  readValue=(id:any)=>
+  {
+    let data:any={
+      "id": id
+  }
+  this.api.deletePatient(data).subscribe(
+    (response:any)=>
+    {
+      console.log(response)
+      if(response.status=="success")
+      {
+        alert("Deleted succesfully")
+        this.searchData=[]
+        
+        
+      }
+    }
+  )
+  }
+
+
 
 }
